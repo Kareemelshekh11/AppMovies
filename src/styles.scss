@@ -1,4 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import './assets/scss/bootstrap';
+@import './assets/scss/base';
+@import './assets/scss/helpers';
+@import './assets/scss/normalize';
+@import './assets/scss/forms';
+@import './assets/scss/transitions';
+
+
+//Common Styles
+@import './assets/scss/hero';
+@import './assets/scss/listing';
+@import './assets/scss/overview';
+@import './assets/scss/videos';
+@import './assets/scss/image';
+
+html, body { 
+    font-family: $base-font-family !important;
+    
+}
+
+body { margin: 0; }
+
+
+.paybtn{
+    text-align: center;
+    background: #212121;
+    padding-bottom: 20px;
+    .PaymentButton-securedBy{
+        display: none;
+    }
+    svg{
+        display: none;
+    }
+    .PaymentButton {
+        background: #dc4666 !important;
+    }
+    .PaymentButton-contents {
+        padding: 10px 0px 10px 0px !important;
+        .PaymentButton-text{
+            color: #fff;
+        }
+    }
+}
