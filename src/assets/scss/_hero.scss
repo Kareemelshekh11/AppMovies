@@ -146,6 +146,7 @@
   line-height: 1.1;
   color: #fff;
   letter-spacing: $letter-spacing;
+  font-family: $base-font-family !important;
   cursor: pointer;
 
   @media (min-width: $breakpoint-small) {

@@ -10,6 +10,11 @@ import { MoviesComponent } from './movies/movies.component';
 import { TvComponent } from './tv/tv.component';
 import { GenresComponent } from './genres/genres.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PipeModule } from './pipe/pipe.module';
+import { SkeletonModule } from './shared/skeleton/skeleton.module';
+import { SliderComponent } from './slider/slider.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +23,19 @@ import { HomeComponent } from './home/home.component';
     MoviesComponent,
     TvComponent,
     GenresComponent,
-    HomeComponent
+    HomeComponent,
+    SliderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     SidebarModule,
-    CarouselModule
+    CarouselModule,
+    HttpClientModule,
+    PipeModule,
+    SkeletonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
