@@ -46,3 +46,13 @@ body { margin: 0; }
         }
     }
 }
+
+.mat-mdc-paginator-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 8px;
+    font-size: 13px;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+}
