@@ -16,13 +16,23 @@ import { SkeletonModule } from './shared/skeleton/skeleton.module';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { SliderComponent } from './slider/slider.component';
 import { FooterComponent } from './footer/footer.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatDialogModule } from '@angular/material/dialog';
+import {  MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
-import {ScrollingModule} from '@angular/cdk/scrolling';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { FormsModule } from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatIconModule} from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { GenreComponent } from './genre/genre.component';
+import { TvGenreComponent } from './tv-genre/tv-genre.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { AppMovieDialogComponent } from './movie-details/dialog/app-movie-dialog/app-movie-dialog.component';
+import { TvDetailsComponent } from './tv-details/tv-details.component';
+import { TvDialogComponent } from './tv-details/dialog/tv-dialog/tv-dialog.component';
+import { PersonComponent } from './person/person.component';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +43,14 @@ import {MatIconModule} from '@angular/material/icon';
     GenresComponent,
     HomeComponent,
     SliderComponent,
-    FooterComponent
+    FooterComponent,
+    GenreComponent,
+    TvGenreComponent,
+    MovieDetailsComponent,
+    AppMovieDialogComponent,
+    TvDetailsComponent,
+    TvDialogComponent,
+    PersonComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +68,9 @@ import {MatIconModule} from '@angular/material/icon';
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatDialogModule,
+    MatIconModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
