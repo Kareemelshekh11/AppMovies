@@ -32,7 +32,7 @@ import { AppMovieDialogComponent } from './movie-details/dialog/app-movie-dialog
 import { TvDetailsComponent } from './tv-details/tv-details.component';
 import { TvDialogComponent } from './tv-details/dialog/tv-dialog/tv-dialog.component';
 import { PersonComponent } from './person/person.component';
-
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +50,8 @@ import { PersonComponent } from './person/person.component';
     AppMovieDialogComponent,
     TvDetailsComponent,
     TvDialogComponent,
-    PersonComponent
+    PersonComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

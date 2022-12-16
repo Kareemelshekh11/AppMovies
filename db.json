@@ -1,0 +1,11 @@
+{
+    "signupUsersList": [
+        {
+          "first_Name" : "Kareem",
+          "last_Name" : "Wael",
+          "age" : "44",
+          "email": "kareemwael555@gmail.com",
+          "password": "Kareem@123"
+        }
+    ]
+}
